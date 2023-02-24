@@ -9,11 +9,10 @@ namespace Projeto_Integrador
         public App()
         {
             InitializeComponent();
-
             TabbedPage tb = new TabbedPage();
             tb.Children.Add(new MainPage());
-            tb.Children.Add(new PagCss());
-            tb.Children.Add(new PagRedes());
+            tb.Children.Add(new Css());
+            tb.Children.Add(new Redes());
             MainPage = tb;
         }
 
