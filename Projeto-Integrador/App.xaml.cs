@@ -1,4 +1,5 @@
 ﻿using System;
+using Projeto_Integrador.pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
