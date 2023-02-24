@@ -10,7 +10,11 @@ namespace Projeto_Integrador
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            TabbedPage tb = new TabbedPage();
+            tb.Children.Add(new MainPage());
+            tb.Children.Add(new PagCss());
+            tb.Children.Add(new PagRedes());
+            MainPage = tb;
         }
 
         protected override void OnStart()
