@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Projeto-Integrador.pages
+namespace Projeto_Integrador.pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 public partial class Redes : ContentPage
