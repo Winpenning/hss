@@ -6,22 +6,7 @@
              BackgroundImageSource="fundo.jpg">
 
 
-    <ScrollView>
-        <Grid Margin="10,0,10,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -43,8 +28,6 @@
                     <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
                     <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
                 </StackLayout>
-            </Frame>
-        </StackLayout> 
 
             <StackLayout Grid.Row="3">
             <Label Text="Comandos Basicos OS`s" FontSize="20" TextColor="White" Margin="47,20,0,0"/>
@@ -56,8 +39,6 @@
                     <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
                     <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
                 </StackLayout>
-            </Frame>
-        </StackLayout> 
 
             <StackLayout Grid.Row="5">
             <Label Text="Shell Script" FontSize="20" TextColor="White" Margin="47,20,0,0"/>
@@ -69,8 +50,6 @@
                     <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
                     <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
                 </StackLayout>
-            </Frame>
-        </StackLayout>
 
             <StackLayout Grid.Row="7">
             <Label Text="FTP" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
@@ -79,20 +58,6 @@
             <StackLayout Grid.Row="8">
             <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
                 <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,0,0" BackgroundColor="Black"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-
-            <StackLayout Grid.Row="9">
-            <Label Text="DHCP" FontSize="20" TextColor="White" Margin="47,20,0,0"/>
-        </StackLayout> <!-- DHCP -->
-
-            <StackLayout Grid.Row="10">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
@@ -139,14 +104,8 @@
             <Label Text="AD DS" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
         </StackLayout><!-- AD DS -->
 
-            <StackLayout Grid.Row="18">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,0,0" BackgroundColor="Black"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
         </Grid>
-    </ScrollView>
-
 </ContentPage>
