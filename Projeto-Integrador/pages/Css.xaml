@@ -16,11 +16,11 @@
         </Grid.RowDefinitions>
         <StackLayout>
             <StackLayout>
-                <Image Source="cabecalhocss.png"/>
+                <Label Text="Configuração de Serviços e Servidores" TextColor="White" FontSize="35" HorizontalTextAlignment="Start" Margin="20"/>
             </StackLayout>
 
             <StackLayout>
-                <Label Text="Windows" TextColor="White" FontSize="20" FontAttributes="Bold"  Margin="20,30,0,0"/>
+                <Label Text="WINDOWS" TextColor="White" FontSize="20" FontAttributes="Bold"  Margin="20,30,0,0"/>
             </StackLayout>
 
             <ScrollView Grid.Row="2" Orientation="Horizontal">
@@ -42,7 +42,12 @@
 
             <ScrollView Orientation="Horizontal" Grid.Row="4">
                 <StackLayout Orientation="Horizontal">
-                    
+                    <ImageButton Source="terminalLin" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="maquinaWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="shellLin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="ftpLin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0"  BorderColor="black" BorderWidth="1"/>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
