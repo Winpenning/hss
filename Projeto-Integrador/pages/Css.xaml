@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.Css"
              Title="CSS"
-             BackgroundImageSource="fundo.jpg">
+             BackgroundColor="#3E187A">
 
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,99 +14,37 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
-            <StackLayout Grid.Row="0">
-            <Label Text=" Configuracao de Servicos e Servidores" TextColor="White" FontSize="37" HorizontalTextAlignment="Start" Margin="20,0,0,20"/>
-        </StackLayout>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="cabecalhocss.png"/>
+            </StackLayout>
 
-            <StackLayout Grid.Row="1">
-            <Label Text="Maquina Virtual" FontSize="20" TextColor="White" Margin="47,0,0,0"/>
-        </StackLayout> <!-- Maquina virtual -->
-        
-            <StackLayout Grid.Row="2">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
+            <StackLayout>
+                <Label Text="Windows" TextColor="White" FontSize="20" FontAttributes="Bold"  Margin="20,30,0,0"/>
+            </StackLayout>
+
+            <ScrollView Grid.Row="2" Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
+                    <ImageButton Source="ComandsWin" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="maquinaWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="shellWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="dnsWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="iisWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="addsWin" CornerRadius="15"  Margin="0,0,10,0"  BorderColor="black" BorderWidth="1"/>
                 </StackLayout>
+
+            </ScrollView>
 
             <StackLayout Grid.Row="3">
-            <Label Text="Comandos Basicos OS`s" FontSize="20" TextColor="White" Margin="47,20,0,0"/>
-        </StackLayout> <!-- OS`s -->
+                <Label Text="LINUX" TextColor="White" FontSize="20" FontAttributes="Bold"  Margin="20,30,0,0"/>
+            </StackLayout>
 
-            <StackLayout Grid.Row="4">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
+            <ScrollView Orientation="Horizontal" Grid.Row="4">
                 <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
-                </StackLayout>
-
-            <StackLayout Grid.Row="5">
-            <Label Text="Shell Script" FontSize="20" TextColor="White" Margin="47,20,0,0"/>
-        </StackLayout> <!-- Shell -->
-
-            <StackLayout Grid.Row="6">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,8,0" BackgroundColor="Black"/>
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" BackgroundColor="Black"/>
-                </StackLayout>
-
-            <StackLayout Grid.Row="7">
-            <Label Text="FTP" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
-        </StackLayout> <!-- FTP -->
-
-            <StackLayout Grid.Row="8">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-
-            <StackLayout Grid.Row="11">
-            <Label Text="HTTP" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
                     
-        </StackLayout> <!-- HTTP -->
-
-            <StackLayout Grid.Row="12">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,0,0" BackgroundColor="Black"/>
                 </StackLayout>
-            </Frame>
+            </ScrollView>
         </StackLayout>
-
-            <StackLayout Grid.Row="13">
-            <Label Text="DNS" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
-                   
-        </StackLayout> <!-- DNS -->
-    
-            <StackLayout Grid.Row="14">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,0,0" BackgroundColor="Black"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout> 
-
-            <StackLayout Grid.Row="15">
-            <Label Text="ISS" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
-        </StackLayout><!-- ISS -->
-
-            <StackLayout Grid.Row="16">
-            <Frame HorizontalOptions="Center" CornerRadius="10" Padding="5" BackgroundColor="#F5E4FF">
-                <StackLayout Orientation="Horizontal">
-                    <Button WidthRequest="140" HeightRequest="170" CornerRadius="10" Margin="0,0,0,0" BackgroundColor="Black"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-
-            <StackLayout Grid.Row="17">
-            <Label Text="AD DS" FontSize="20" TextColor="White" Margin="115,20,0,0"/>
-        </StackLayout><!-- AD DS -->
-
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-        </Grid>
+    </Grid>
 </ContentPage>
