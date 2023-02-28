@@ -1,10 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto_Integrador.pages.Redes">
-    <ContentPage.Content>
+             x:Class="Projeto_Integrador.pages.Redes"
+             Title="Redes"
+             BackgroundColor="#3E187A">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         <StackLayout>
+
+            <StackLayout>
+
+            </StackLayout>
+            
+            <StackLayout>
+                <Label Text="Tópico 1" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="20,30,0,0"/>
+            </StackLayout>
+
+            <ScrollView Grid.Row="2" Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Source="subtopico1.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="subtopico2.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Black" BorderWidth="1"/>
+                    
+                </StackLayout>
+            </ScrollView>
             
         </StackLayout>
-    </ContentPage.Content>
+
+    </Grid>
 </ContentPage>
