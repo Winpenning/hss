@@ -26,7 +26,7 @@
                 <StackLayout Orientation="Horizontal">
                     <ImageButton Source="subtopico1.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
                     <ImageButton Source="subtopico2.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Black" BorderWidth="1"/>
-                    
+                    <ImageButton Source="subtopico3.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Black" BorderWidth="1"/>
                 </StackLayout>
             </ScrollView>
             
