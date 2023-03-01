@@ -9,12 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace Projeto_Integrador.pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class Redes : ContentPage
-{
-    public Redes()
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Redes : ContentPage
     {
-        InitializeComponent();
+        public Redes()
+        {
+            InitializeComponent();
+        }
+
+      
     }
-}
+
+    
 }

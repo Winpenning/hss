@@ -15,18 +15,19 @@
         <StackLayout>
 
             <StackLayout>
-
+                <Label Text="Redes de Computadores" TextColor="White" FontSize="35" HorizontalTextAlignment="Start" Margin="20"
+                       FontAttributes="Bold"/>
             </StackLayout>
-            
+
             <StackLayout>
                 <Label Text="Tópico 1" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="20,30,0,0"/>
             </StackLayout>
 
             <ScrollView Grid.Row="2" Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="subtopico1.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="subtopico2.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Black" BorderWidth="1"/>
-                    <ImageButton Source="subtopico3.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Black" BorderWidth="1"/>
+                    <ImageButton Source="subtopico1.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
+                                 />
+                    <ImageButton Source="subtopico2.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"/>
                 </StackLayout>
             </ScrollView>
             

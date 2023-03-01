@@ -25,7 +25,7 @@
 
             <ScrollView Grid.Row="2" Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="ComandsWin" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="ComandsWin" CornerRadius="15" Margin="10,0,0,0"  BorderWidth="1"/>
                     <ImageButton Source="maquinaWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
                     <ImageButton Source="shellWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
                     <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
@@ -46,7 +46,7 @@
                     <ImageButton Source="maquinaWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
                     <ImageButton Source="shellLin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
                     <ImageButton Source="ftpLin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1" Clicked="ImageButton_Clicked"/>
                     <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0"  BorderColor="black" BorderWidth="1"/>
                 </StackLayout>
             </ScrollView>

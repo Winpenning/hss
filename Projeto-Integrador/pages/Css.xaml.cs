@@ -16,5 +16,11 @@ public partial class Css : ContentPage
     {
         InitializeComponent();
     }
-}
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            var x = new Projeto_Integrador.pages.css.dhcp();
+            Navigation.PushModalAsync(x);
+        }
+    }
 }
