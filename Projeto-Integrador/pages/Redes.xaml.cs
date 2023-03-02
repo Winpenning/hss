@@ -17,7 +17,11 @@ namespace Projeto_Integrador.pages
             InitializeComponent();
         }
 
-      
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            var x = new Projeto_Integrador.pages.rede.modeloosi();
+            Navigation.PushModalAsync(x);
+        }
     }
 
     
