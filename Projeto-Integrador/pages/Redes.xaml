@@ -25,9 +25,7 @@
 
             <ScrollView Grid.Row="2" Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="subtopico1.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
-                                 />
-                    <ImageButton Source="subtopico2.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"/>
+                    <ImageButton Source="osimodel.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"/>
                 </StackLayout>
             </ScrollView>
             
