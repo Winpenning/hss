@@ -28,6 +28,11 @@ namespace Projeto_Integrador.pages
             var est1 = new Projeto_Integrador.pages.rede.redesestruturadas1();
             Navigation.PushModalAsync(est1);
         }
+
+        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
     }
 
     
