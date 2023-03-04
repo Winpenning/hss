@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Projeto_Integrador.pages.rede
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DW_3200AP : ContentPage
+	public partial class DWL_3200AP : ContentPage
 	{
-		public DW_3200AP ()
+		public DWL_3200AP ()
 		{
 			InitializeComponent ();
 		}

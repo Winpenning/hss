@@ -28,9 +28,9 @@
                     <StackLayout Orientation="Horizontal">
                         <ImageButton Source="osimodel.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
                                  Clicked="ImageButton_Clicked"/>
-                        <ImageButton Source="osimodel.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
+                        <ImageButton Source="redesestruturadas1.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
                                      Clicked="ImageButton_Clicked_1"/>
-                        <ImageButton Source="osimodel.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
+                        <ImageButton Source="redesestruturadas2.png" CornerRadius="15" Margin="10,0,0,0" BorderColor="Transparent" BorderWidth="1"
                                      Clicked="ImageButton_Clicked_2"/>
                     </StackLayout>
                 </StackLayout>
