@@ -42,12 +42,12 @@
 
             <ScrollView Orientation="Horizontal" Grid.Row="4">
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="terminalLin" CornerRadius="15" Margin="10,0,0,0"/>
-                    <ImageButton Source="maquinaWin" CornerRadius="15"/>
-                    <ImageButton Source="shellLin" CornerRadius="15"/>
-                    <ImageButton Source="ftpLin" CornerRadius="15"/>
-                    <ImageButton Source="dhcpWin" CornerRadius="15"/>
-                    <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0"/>
+                    <ImageButton Source="terminalLin" CornerRadius="15" Margin="10,0,0,0" Clicked="buttonTerminalLin"/>
+                    <ImageButton Source="maquinaWin" CornerRadius="15" Clicked="buttonMaquinaLin"/>
+                    <ImageButton Source="shellLin" CornerRadius="15" Clicked="buttonShellLin"/>
+                    <ImageButton Source="ftpLin" CornerRadius="15" Clicked="buttonFtpLin"/>
+                    <ImageButton Source="dhcpWin" CornerRadius="15" Clicked="buttonDhcpLin"/>
+                    <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0" Clicked="buttonHttpLin"/>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

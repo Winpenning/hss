@@ -17,6 +17,7 @@ public partial class Css : ContentPage
         InitializeComponent();
     }
 
+        //Windows
         private void buttonDhcpWin(object sender, EventArgs e)
         {
             var VarDhcpWin = new Projeto_Integrador.pages.css.dhcpWin();
@@ -57,6 +58,44 @@ public partial class Css : ContentPage
         {
             var VarAddsWin = new Projeto_Integrador.pages.css.addsWin();
             Navigation.PushModalAsync(VarAddsWin);
+        }
+
+        //Linux
+
+        private void buttonTerminalLin(object sender, EventArgs e)
+        {
+            var VarTerminalLin = new Projeto_Integrador.pages.css.terminalLin();
+            Navigation.PushModalAsync(VarTerminalLin);
+        }
+
+        private void buttonMaquinaLin(object sender, EventArgs e)
+        {
+            var VarMaquinaLin = new Projeto_Integrador.pages.css.maquinaLin();
+            Navigation.PushModalAsync(VarMaquinaLin);
+        }
+
+        private void buttonShellLin(object sender, EventArgs e)
+        {
+            var VarShellLin = new Projeto_Integrador.pages.css.shellLin();
+            Navigation.PushModalAsync(VarShellLin);
+        }
+
+        private void buttonFtpLin(object sender, EventArgs e)
+        {
+            var VarFtpLin = new Projeto_Integrador.pages.css.ftpLin();
+            Navigation.PushModalAsync(VarFtpLin);
+        }
+
+        private void buttonDhcpLin(object sender, EventArgs e)
+        {
+            var VarDhcpLin = new Projeto_Integrador.pages.css.dhcpLin();
+            Navigation.PushModalAsync(VarDhcpLin);
+        }
+
+        private void buttonHttpLin(object sender, EventArgs e)
+        {
+            var VarHttpLin = new Projeto_Integrador.pages.css.httpLin();
+            Navigation.PushModalAsync(VarHttpLin);
         }
     }
 }
