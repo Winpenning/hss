@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Projeto_Integrador.pages.css
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class dhcp : ContentPage
-	{
-		public dhcp ()
-		{
-			InitializeComponent ();
-		}
-	}
+public partial class dnsWin : ContentPage
+{
+    public dnsWin()
+    {
+        InitializeComponent();
+    }
+}
 }

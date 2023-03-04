@@ -17,16 +17,46 @@ public partial class Css : ContentPage
         InitializeComponent();
     }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private void buttonDhcpWin(object sender, EventArgs e)
         {
-            var x = new Projeto_Integrador.pages.css.dhcp();
-            Navigation.PushModalAsync(x);
+            var VarDhcpWin = new Projeto_Integrador.pages.css.dhcpWin();
+            Navigation.PushModalAsync(VarDhcpWin);
         }
 
         private void buttonComandosWin(object sender, EventArgs e)
         {
-            var y = new Projeto_Integrador.pages.css.comandosWin();
-            Navigation.PushModalAsync(y);
+            var VarComandosWin = new Projeto_Integrador.pages.css.comandosWin();
+            Navigation.PushModalAsync(VarComandosWin);
+        }
+
+        private void buttonMaquinaWin(object sender, EventArgs e)
+        {
+            var VarMaquinaWin = new Projeto_Integrador.pages.css.maquinaWin();
+            Navigation.PushModalAsync(VarMaquinaWin);
+        }
+
+        private void buttonShellWin(object sender, EventArgs e)
+        {
+            var VarShellWin = new Projeto_Integrador.pages.css.shellWin();
+            Navigation.PushModalAsync(VarShellWin);
+        }
+
+        private void buttonDnsWin(object sender, EventArgs e)
+        {
+            var VarDnsWin = new Projeto_Integrador.pages.css.dnsWin();
+            Navigation.PushModalAsync(VarDnsWin);
+        }
+
+        private void buttonIisWin(object sender, EventArgs e)
+        {
+            var VarIisWin = new Projeto_Integrador.pages.css.iisWin();
+            Navigation.PushModalAsync(VarIisWin);
+        }
+
+        private void buttonAddsWin(object sender, EventArgs e)
+        {
+            var VarAddsWin = new Projeto_Integrador.pages.css.addsWin();
+            Navigation.PushModalAsync(VarAddsWin);
         }
     }
 }
