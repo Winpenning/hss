@@ -38,7 +38,7 @@
     <EmbeddedResource Update="pages\Redes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="pages\rede\DWL-3200AP.xaml">
+    <EmbeddedResource Update="pages\rede\DW-3200AP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\rede\modeloosi.xaml">
