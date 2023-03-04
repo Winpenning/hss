@@ -19,8 +19,14 @@ namespace Projeto_Integrador.pages
 
         private void ImageButton_Clicked(object sender, EventArgs e)
         {
-            var x = new Projeto_Integrador.pages.rede.modeloosi();
-            Navigation.PushModalAsync(x);
+            var osi = new Projeto_Integrador.pages.rede.modeloosi();
+            Navigation.PushModalAsync(osi);
+        }
+
+        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+            var est1 = new Projeto_Integrador.pages.rede.redesestruturadas1();
+            Navigation.PushModalAsync(est1);
         }
     }
 
