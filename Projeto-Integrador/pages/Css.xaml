@@ -25,13 +25,13 @@
 
             <ScrollView Grid.Row="2" Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="ComandsWin" CornerRadius="15" Margin="10,0,0,0"  BorderWidth="1"/>
-                    <ImageButton Source="maquinaWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="shellWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="dnsWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="iisWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="addsWin" CornerRadius="15"  Margin="0,0,10,0"  BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="ComandsWin" CornerRadius="15" Margin="10,0,0,0" Clicked="buttonComandosWin"/>
+                    <ImageButton Source="maquinaWin" CornerRadius="15"/>
+                    <ImageButton Source="shellWin" CornerRadius="15"/>
+                    <ImageButton Source="dhcpWin" CornerRadius="15"/>
+                    <ImageButton Source="dnsWin" CornerRadius="15"/>
+                    <ImageButton Source="iisWin" CornerRadius="15"/>
+                    <ImageButton Source="addsWin" CornerRadius="15" Margin="0,0,10,0"/>
                 </StackLayout>
 
             </ScrollView>
@@ -42,12 +42,12 @@
 
             <ScrollView Orientation="Horizontal" Grid.Row="4">
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="terminalLin" CornerRadius="15" Margin="10,0,0,0" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="maquinaWin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="shellLin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="ftpLin" CornerRadius="15" BorderColor="black" BorderWidth="1"/>
-                    <ImageButton Source="dhcpWin" CornerRadius="15" BorderColor="black" BorderWidth="1" Clicked="ImageButton_Clicked"/>
-                    <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0"  BorderColor="black" BorderWidth="1"/>
+                    <ImageButton Source="terminalLin" CornerRadius="15" Margin="10,0,0,0"/>
+                    <ImageButton Source="maquinaWin" CornerRadius="15"/>
+                    <ImageButton Source="shellLin" CornerRadius="15"/>
+                    <ImageButton Source="ftpLin" CornerRadius="15"/>
+                    <ImageButton Source="dhcpWin" CornerRadius="15" Clicked="ImageButton_Clicked"/>
+                    <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0"/>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

@@ -11,10 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="pages\css\comandos.xaml.cs" />
     <Compile Remove="pages\P1.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="pages\css\comandos.xaml" />
     <EmbeddedResource Remove="pages\P1.xaml" />
   </ItemGroup>
 
@@ -25,6 +27,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="pages\Css.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\css\comandosWin.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\css\dhcp.xaml">

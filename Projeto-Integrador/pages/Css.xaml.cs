@@ -22,5 +22,11 @@ public partial class Css : ContentPage
             var x = new Projeto_Integrador.pages.css.dhcp();
             Navigation.PushModalAsync(x);
         }
+
+        private void buttonComandosWin(object sender, EventArgs e)
+        {
+            var y = new Projeto_Integrador.pages.css.comandosWin();
+            Navigation.PushModalAsync(y);
+        }
     }
 }
