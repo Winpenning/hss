@@ -11,9 +11,14 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         
-        <StackLayout>
-            
+        <StackLayout Grid.Row="0" Grid.Column="1">
+            <Label Text="Modelo OSI" TextColor="White" FontAttributes="Bold" FontSize="35"/>
         </StackLayout>
 
     </Grid>
