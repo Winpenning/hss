@@ -138,7 +138,7 @@
     <AndroidResource Include="Resources\drawable\redesestruturadas2.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\dwl-3200ap.png" />
+    <AndroidResource Include="Resources\drawable\dwl3200ap.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
