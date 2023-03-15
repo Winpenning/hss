@@ -2,14 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.Css"
-             Title="CSS">
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="#3E187A" Offset="0.1"/>
-            <GradientStop Color="#000000" Offset="1.0"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
-
+             Title="CSR"
+             BackgroundColor="#DFDFDF">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,42 +12,25 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <StackLayout>
-            <StackLayout>
-                <Label Text="Configuração de Serviços e Servidores" TextColor="White" FontSize="35" HorizontalTextAlignment="Start" Margin="20"/>
-            </StackLayout>
 
-            <StackLayout>
-                <Label Text="WINDOWS" TextColor="White" FontSize="20" FontAttributes="Bold"  Margin="20,30,0,0"/>
-            </StackLayout>
-
-            <ScrollView Grid.Row="2" Orientation="Horizontal">
-                <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="ComandsWin" CornerRadius="15" Margin="10,0,0,0" Clicked="buttonComandosWin"/>
-                    <ImageButton Source="maquinaWin" CornerRadius="15" Clicked="buttonMaquinaWin"/>
-                    <ImageButton Source="shellWin" CornerRadius="15" Clicked="buttonShellWin"/>
-                    <ImageButton Source="dhcpWin" CornerRadius="15" Clicked="buttonDhcpWin"/>
-                    <ImageButton Source="dnsWin" CornerRadius="15" Clicked="buttonDnsWin"/>
-                    <ImageButton Source="iisWin" CornerRadius="15" Clicked="buttonIisWin"/>
-                    <ImageButton Source="addsWin" CornerRadius="15" Margin="0,0,10,0" Clicked="buttonAddsWin"/>
-                </StackLayout>
-
-            </ScrollView>
-
-            <StackLayout Grid.Row="3">
-                <Label Text="LINUX" TextColor="White" FontSize="20" FontAttributes="Bold"  Margin="20,30,0,0"/>
-            </StackLayout>
-
-            <ScrollView Orientation="Horizontal" Grid.Row="4">
-                <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="terminalLin" CornerRadius="15" Margin="10,0,0,0" Clicked="buttonTerminalLin"/>
-                    <ImageButton Source="maquinaWin" CornerRadius="15" Clicked="buttonMaquinaLin"/>
-                    <ImageButton Source="shellLin" CornerRadius="15" Clicked="buttonShellLin"/>
-                    <ImageButton Source="ftpLin" CornerRadius="15" Clicked="buttonFtpLin"/>
-                    <ImageButton Source="dhcpWin" CornerRadius="15" Clicked="buttonDhcpLin"/>
-                    <ImageButton Source="httpLin" CornerRadius="15"  Margin="0,0,10,0" Clicked="buttonHttpLin"/>
-                </StackLayout>
-            </ScrollView>
+        <Frame BackgroundColor="#D78DE4" Grid.Row="0">
+            <Label Text="CSR" 
+                   TextColor="White" FontAttributes="Bold" FontSize="30"
+                   Margin="20,80,0,0"/> 
+        </Frame>
+        <StackLayout Grid.Row="1">
+            <Button Text="Terminal" Clicked="botao_terminal"
+                HeightRequest="150" WidthRequest="70" Margin="50,10" 
+                BackgroundColor="White" CornerRadius="20"/>
+            
+            <Button Text="Power Shell" Clicked="botao_power"
+                HeightRequest="150" WidthRequest="70" Margin="50,10"
+                BackgroundColor="White" CornerRadius="20"/>
+            
+            <Button Text="Shell Script" Clicked="botao_shellscript"
+                HeightRequest="150" WidthRequest="70" Margin="50,10"
+               BackgroundColor="White" CornerRadius="20"/>
         </StackLayout>
+
     </Grid>
 </ContentPage>

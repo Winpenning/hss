@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Projeto_Integrador.pages.css
+namespace Projeto_Integrador.pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class ftpLin : ContentPage
+public partial class terminal : ContentPage
 {
-    public ftpLin()
+    public terminal()
     {
         InitializeComponent();
     }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Projeto_Integrador.pages.css
+namespace Projeto_Integrador.pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class dnsWin : ContentPage
+public partial class powershell : ContentPage
 {
-    public dnsWin()
+    public powershell()
     {
         InitializeComponent();
     }

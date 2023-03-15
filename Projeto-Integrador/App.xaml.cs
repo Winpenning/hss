@@ -13,7 +13,6 @@ namespace Projeto_Integrador
             TabbedPage tb = new TabbedPage();
             tb.Children.Add(new MainPage());
             tb.Children.Add(new Css());
-            tb.Children.Add(new Redes());
             MainPage = tb;
         }
 

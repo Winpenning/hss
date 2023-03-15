@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Projeto_Integrador.pages.rede
+namespace Projeto_Integrador.pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class modeloosi : ContentPage
-	{
-		public modeloosi ()
-		{
-			InitializeComponent ();
-		}
-	}
+public partial class shellscript : ContentPage
+{
+    public shellscript()
+    {
+        InitializeComponent();
+    }
+}
 }
