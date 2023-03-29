@@ -16,5 +16,23 @@ public partial class terminal : ContentPage
     {
         InitializeComponent();
     }
-}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var controlAcess = new Projeto_Integrador.pages.acesso();
+            Navigation.PushModalAsync(controlAcess);
+        }
+
+        private void Button_Clicked2(object sender, EventArgs e)
+        {
+            var controlGest = new Projeto_Integrador.pages.gestao();
+            Navigation.PushModalAsync(controlGest);
+        }
+
+        private void Button_Clicked1(object sender, EventArgs e)
+        {
+            var controlManut = new Projeto_Integrador.pages.manut();
+            Navigation.PushModalAsync(controlManut);
+        }
+    }
 }

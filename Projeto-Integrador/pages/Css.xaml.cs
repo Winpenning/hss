@@ -25,7 +25,7 @@ namespace Projeto_Integrador.pages
 
         private void botao_power(object sender, EventArgs e)
         {
-            var powershell = new Projeto_Integrador.pages.terminal();
+            var powershell = new Projeto_Integrador.pages.powershell();
             Navigation.PushModalAsync(powershell);
         }
 
