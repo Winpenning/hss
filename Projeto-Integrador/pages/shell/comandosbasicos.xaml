@@ -8,7 +8,8 @@
             <GradientStop Color="HotPink" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
-    <Grid>
+    <ScrollView>
+        <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -37,9 +38,21 @@
                     <Label FontSize="18" FontAttributes="None" TextColor="#252525"
                         Text="Esse comando irá imprimir um texto na tela (exemplo: echo 'seu texto aqui' )."/>
                 </StackLayout>
+ 
+               
             </Frame>
         </StackLayout>
 
+        <StackLayout Grid.Row="3" Orientation="Vertical">
+            <Frame CornerRadius="30" Margin="0,80,0,0" BackgroundColor="#F2F2F2">
+                <StackLayout>
+                    <Label Text="nome da variável = valor" FontSize="26" FontAttributes="Bold" TextColor="#059c05"/>
+                    <Label FontSize="18" FontAttributes="None" TextColor="#252525"
+                        Text="Esse comando irá criar uma variável e associar um valor a ela (exemlo: valor1=  ou nome = 'Paulo'."/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
 
     </Grid>
+    </ScrollView>
 </ContentPage>
