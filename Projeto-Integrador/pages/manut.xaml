@@ -19,8 +19,8 @@
             <Label Text="Comandos de monitoria no terminal Linux" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="30,0,30,0"/>
         </StackLayout>
         
-            <StackLayout Grid.Row="1" Margin="0,20,0,0">
-                <Frame CornerRadius="10" Margin="10,2">
+            <StackLayout Grid.Row="1" Margin="0,30,0,0">
+                <Frame CornerRadius="10" Margin="15,3">
                     <StackLayout>
                         <Label Text="ls" FontSize="26" TextColor="#373737"/>
                         <Label Text="Lista todos os arquivos do diretório." FontSize="18" 

@@ -10,49 +10,128 @@
     </ContentPage.Background>
     <ScrollView>
         <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <StackLayout Grid.Row="0">
-            <Label Text="Comandos básicos"
-                   FontSize="38" TextColor="#373737" FontAttributes="Bold"
-                   Margin="30,60,10,0"/>
-        </StackLayout>
+            <StackLayout Grid.Row="0">
+                <Label Text="Comandos básicos"
+                FontSize="38" TextColor="#373737" FontAttributes="Bold"
+                Margin="30,60,10,0"/>
+            </StackLayout>
 
-        <StackLayout Grid.Row="1" Orientation="Vertical">
-            <Frame CornerRadius="30" Margin="0,80,0,0" BackgroundColor="#F2F2F2">
-                <StackLayout>
-                    <Label Text="#!/bin/bash" FontSize="26" FontAttributes="Bold" TextColor="#4546da"/>
-                    <Label FontSize="18" FontAttributes="None" TextColor="#252525"
-                        Text="Fornece o caminho completo do shell, para que ele possa ser localizado onde quer que o script seja executado. O \bash indica que o bash será o interpretador do código (outros exemplos: \env pthon3, \sh)."/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="#!/bin/bash" FontSize="26" FontAttributes="Bold" TextColor="#4546da"/>
+                        <Label FontSize="18" FontAttributes="None" TextColor="#252525"
+                            Text="Fornece o caminho completo do shell, para que ele possa ser localizado onde quer que o script seja executado. O \bash indica que o bash será o interpretador do código (outros exemplos: \env pthon3, \sh)."/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
 
-        <StackLayout Grid.Row="2" Orientation="Vertical">
-            <Frame CornerRadius="30" Margin="0,80,0,0" BackgroundColor="#F2F2F2">
-                <StackLayout>
-                    <Label Text="echo" FontSize="26" FontAttributes="Bold" TextColor="#059c05"/>
-                    <Label FontSize="18" FontAttributes="None" TextColor="#252525"
-                        Text="Esse comando irá imprimir um texto na tela (exemplo: echo 'seu texto aqui' )."/>
-                </StackLayout>
- 
-               
-            </Frame>
-        </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="echo" FontSize="26" FontAttributes="Bold" TextColor="#059c05"/>
+                        <Label FontSize="18" FontAttributes="None" TextColor="#252525"
+                            Text="Esse comando irá imprimir um texto na tela."/>
+                        <Label Text="Exemplo: " FontSize="18" TextColor="Gray"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#252525">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="echo 'seu texto aqui'" FontAttributes="Bold" FontSize="18" TextColor="Green"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Criação de Variáveis" FontSize="26" FontAttributes="Bold" TextColor="Gray"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#252525">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="nome da variavel = " TextColor="CornflowerBlue" FontAttributes="Bold" FontSize="18"/>
+                                        <Span Text="valor" TextColor="Green" FontAttributes="Bold" FontSize="18"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                        <Label Text="Exemplo:" TextColor="Gray" FontAttributes="Bold" FontSize="18"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#252525">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="valor1 = " TextColor="CornflowerBlue" FontAttributes="Bold" FontSize="18"/>
+                                        <Span Text="250" TextColor="Green" FontAttributes="Bold" FontSize="18"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
 
-        <StackLayout Grid.Row="3" Orientation="Vertical">
-            <Frame CornerRadius="30" Margin="0,80,0,0" BackgroundColor="#F2F2F2">
-                <StackLayout>
-                    <Label Text="nome da variável = valor" FontSize="26" FontAttributes="Bold" TextColor="#059c05"/>
-                    <Label FontSize="18" FontAttributes="None" TextColor="#252525"
-                        Text="Esse comando irá criar uma variável e associar um valor a ela (exemlo: valor1=  ou nome = 'Paulo'."/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-
-    </Grid>
+            <StackLayout Grid.Row="4" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#f2f2f2">
+                    <StackLayout>
+                        <Label Text="Utilizando variáveis" FontSize="26" FontAttributes="Bold" TextColor="Gray"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#252525">
+                            <!--<Label Text="mensagem = 'Olá mundo!'" FontSize="18" FontAttributes="None" TextColor="White"></Label>-->
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="mensagem = " TextColor="CornflowerBlue" FontAttributes="Bold" FontSize="18"/>
+                                        <Span Text="'Olá mundo!'" TextColor="Green" FontAttributes="Bold" FontSize="18"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#252525">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="echo 'a mensagem é: " TextColor="Green" FontAttributes="Bold" FontSize="18"/>
+                                        <Span Text="$mensagem'" TextColor="CornflowerBlue" FontAttributes="Bold" FontSize="18"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="5" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10">
+                    <StackLayout>
+                        <Label Text="Recebendo Argumentos" FontSize="26" FontAttributes="Bold" TextColor="Gray"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#252525">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="echo 'Parâmetros digitados: " TextColor="Green" FontAttributes="Bold" FontSize="18"/>
+                                        <Span Text="$1 $2 $3" TextColor="CornflowerBlue" FontAttributes="Bold" FontSize="18"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>
