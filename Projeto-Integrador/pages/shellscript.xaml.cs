@@ -11,14 +11,20 @@ namespace Projeto_Integrador.pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 public partial class shellscript : ContentPage
 {
-    public shellscript()
-    {
-        InitializeComponent();
-    }
+        public shellscript()
+        {
+            InitializeComponent();
+        }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
             var x = new Projeto_Integrador.pages.shell.comandosbasicos();
+            Navigation.PushModalAsync(x);
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            var x = new Projeto_Integrador.pages.shell.operadores();
             Navigation.PushModalAsync(x);
         }
     }
