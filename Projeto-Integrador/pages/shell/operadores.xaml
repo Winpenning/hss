@@ -2,11 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.shell.operadores">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#e0d6fa" Offset="0.1"/>
+            <GradientStop Color="HotPink" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0">
+            <Label Text="Operadores"
+                   FontSize="38" TextColor="#373737" FontAttributes="Bold"
+                   Margin="30,60,10,0"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <StackLayout Grid.Row="1">
+            <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="White">
+                <Label Text="Operadores Relacionais" TextColor="#252525" FontSize="26" FontAttributes="Bold"/>
+                
+            </Frame>
+        </StackLayout>
+    </Grid>
 </ContentPage>
