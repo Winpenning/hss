@@ -2,11 +2,74 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.acesso">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#e0d6fa" Offset="0.1"/>
+            <GradientStop Color="HotPink" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+            <Label Text="Comandos de controle e acesso" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="30,0,30,0"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <StackLayout Grid.Row="1" Margin="0,20,0,0">
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="exit" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Terminar a sessão." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="logout" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Des-logar, ou seja, terminar a sessão atual." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="passwd" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Mudar a password do atual utilizador (usuário logado)." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="rlogin" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Logar de forma segura em outro sistema Unix/Linux." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="ssh" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Sessão segura, vem de secure shell, e permite-nos logar num servidor remoto através do protocolo ssh." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="slogin" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Versão segura do rlogin" FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Margin="10,2">
+                <StackLayout>
+                    <Label Text="yppasswd" FontSize="26" TextColor="#373737"/>
+                    <Label Text="Mudar a password do nosso utilizador nas páginas amarelas (yellow pages)." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+    </ScrollView>
 </ContentPage>

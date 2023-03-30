@@ -2,11 +2,246 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.gestao">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#e0d6fa" Offset="0.1"/>
+            <GradientStop Color="HotPink" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <Label Text="Comandos de gestão de arquivos e directorias" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="30,0,30,0"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1">
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="cd" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mudar de diretório atual." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="chmod" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mudar a proteção de um arquivo ou diretório." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="chown" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mudar o dono ou grupo de um arquivo ou diretório." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="chgrp" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mudar o grupo de um arquivo ou diretório." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="cmp" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Compara dois arquivos." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="comm" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Seleciona ou rejeita linhas comuns a dois arquivos selecionados." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="cp" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Copia arquivos." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="crypt" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Encripta ou Descripta arquivos (apenas CCWF)." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="diff" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Compara o conteúdo de dois arquivos ASCII." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="file" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Determina o tipo de arquivo." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="grep" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Procura um arquivo por um padrão." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="gzip" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Comprime ou expande arquivo." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="ln" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Cria um link a um arquivo." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="ls" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Lista o conteúdo de uma diretório." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="lsof" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Lista os arquivos abertos, vem de list open files." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="mkdir" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Cria uma diretório." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="mv" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Move ou renomeia arquivos ou diretórios." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="pwd" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mostra-nos o caminho por inteiro da diretório em que nos encontramos em dado momento." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="quota" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mostra-nos o uso do disco e os limites." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="rm" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Apaga arquivos, vem de remove, e é semelhante ao comando del." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="rmdir" FontSize="26" TextColor="#373737"/>
+                        <Label Text=" Apaga diretório, vem de remove directory." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="stat" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Mostra o estado de um arquivo, útil para saber por exemplo a hora e data do último acesso ao mesmo." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="sync" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Faz um flush aos buffers do sistema de arquivos, sincroniza os dados no disco com a memória, ou seja escreve todos os dados presentes nos buffers da memória para o disco." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="sort" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Ordena, une ou compara texto, podendo ser usado para extrair informações dos arquivos de texto ou mesmo para ordenar dados de outros comandos como por exemplo listar arquivos ordenados pelo nome" FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="tar" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Cria ou extrai arquivos, muito usado como programa de backup ou compressão de arquivos." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="tee" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Copia o input para um standard output e outros arquivos." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="tr" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Traduz caracteres." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="umask" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Muda as proteções de arquivos." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="uncompress" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Restaura um arquivo comprimido." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="uniq" FontSize="26" TextColor="#373737"/>
+                        <Label Text=" Reporta ou apaga linhas repetidas num arquivo." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="10" Margin="10,2">
+                    <StackLayout>
+                        <Label Text="wc" FontSize="26" TextColor="#373737"/>
+                        <Label Text="Conta linhas, palavras e mesmo caracteres num arquivo." FontSize="18" 
+                               Margin="0,0,5,2" TextColor="#252525"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+
+
+        </Grid>        
+    </ScrollView>
 </ContentPage>
