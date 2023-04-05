@@ -2,10 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.MainPage"
-             Title="Sobre">
+             Title="Servidores">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+            <GradientStop Color="#e0d6fa" Offset="0.1"/>
+            <GradientStop Color="HotPink" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
-    <StackLayout>
-        
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
 
+        <StackLayout Grid.Row="0">
+            <Label Text="Configuração de Serviços e Servidores" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1">
+            <Frame CornerRadius="30" Margin="0,0,0,0" BackgroundColor="#FFFFFF">
+                <StackLayout HeightRequest="1000">
+                    <ImageButton Source="terminal.png" 
+                        HeightRequest="150" WidthRequest="70" Margin="50,10" 
+                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
+
+                    <ImageButton Source="Windows.png"
+                        HeightRequest="150" WidthRequest="70" Margin="50,10"
+                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
+
+                    <ImageButton Source="ShellScript.png"
+                        HeightRequest="150" WidthRequest="70" Margin="50,10"
+                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
 </ContentPage>

@@ -22,7 +22,6 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-
             <StackLayout Grid.Row="0">
                 <Label Text="Comandos básicos"
                 FontSize="38" TextColor="#373737" FontAttributes="Bold"
@@ -86,7 +85,6 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-
             <StackLayout Grid.Row="4" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#f2f2f2">
                     <StackLayout>
