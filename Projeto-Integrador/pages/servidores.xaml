@@ -9,9 +9,11 @@
             <GradientStop Color="HotPink" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
-
-    <Grid>
+    <ScrollView Orientation="Vertical">
+        <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -22,12 +24,30 @@
         </StackLayout>
 
         <StackLayout Grid.Row="1">
-            <Frame CornerRadius="30" Margin="0,0,0,0" BackgroundColor="#FFFFFF">
-                <StackLayout HeightRequest="1000">
-                    <Button HeightRequest="150" Text="DHCP" WidthRequest="70" Margin="50,10"
+            <Button HeightRequest="150" Text="Servidor DHCP" WidthRequest="70" Margin="50,10"
                             BackgroundColor="#ebe6f7" CornerRadius="20" Clicked="Button_Clicked"/>
-                </StackLayout>
-            </Frame>
         </StackLayout>
-    </Grid>
+
+        <StackLayout Grid.Row="2">
+            <Button HeightRequest="150" Text="Servidor FTP" WidthRequest="70" Margin="50,10"
+                    BackgroundColor="#ebe6f7" CornerRadius="20"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3">
+            <Button HeightRequest="150" Text="Apache HTTP" WidthRequest="70" Margin="50,10"
+                    BackgroundColor="#ebe6f7" CornerRadius="20"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="4">
+            <Button HeightRequest="150" Text="Servidor samba" WidthRequest="70" Margin="50,10"
+                    BackgroundColor="#ebe6f7" CornerRadius="20"/>
+        </StackLayout>
+
+            <StackLayout Grid.Row="5">
+                <Button HeightRequest="150" Text="Servidor SQUID" WidthRequest="70" Margin="50,10" 
+                        BackgroundColor="#EBE6F7" CornerRadius="20"/>
+            </StackLayout>
+        
+        </Grid>
+    </ScrollView>
 </ContentPage>

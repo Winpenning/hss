@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.MainPage"
-             Title="Servidores">
+             Title="HOME"
+             BackgroundColor="Black">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
             <GradientStop Color="#e0d6fa" Offset="0.1"/>
@@ -18,14 +19,28 @@
         </Grid.RowDefinitions>
 
         <StackLayout Grid.Row="0">
-            <Label Text="Configuração de Serviços e Servidores" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+            <Frame CornerRadius="10" Margin="10,10,10,10" BackgroundColor="#303030" HorizontalOptions="Center">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="twl" FontAttributes="Bold" FontSize="20" TextColor="#f0f0f0"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Frame>
         </StackLayout>
 
         <StackLayout Grid.Row="1">
             <Frame CornerRadius="30" Margin="0,0,0,0" BackgroundColor="#FFFFFF">
                 <StackLayout HeightRequest="1000">
-                    <Button HeightRequest="150" Text="DHCP" WidthRequest="70" Margin="50,10"
-                            BackgroundColor="#ebe6f7" CornerRadius="20" Clicked="Button_Clicked"/>
+                    <Label Text="O twl é um aplicativo mobile para o aprendizado de instalação e configuração de servidores, utilização dos terminais linux, powershell e uma introdução á sistemas operacionais." FontSize="18" FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout Grid.Row="2">
+            <Frame CornerRadius="30" Margin="0,0,0,0" BackgroundColor="#FFFFFF">
+                <StackLayout HeightRequest="1000">
+                    <Label Text="Desenvolvido como um projeto da disciplina Projeto Integrador do curso técnico em manutenção e suporte em informática do Instituto Federal de Santa Cataria (IFSC). pelo aluno: Paulo Henrique Ziemer dos Santos (github: Winpenning) sob direção do professor orientador: Diocélio Larsen." FontSize="18" FontAttributes="Bold"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
