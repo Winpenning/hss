@@ -37,6 +37,7 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
+            
 
             <StackLayout Grid.Row="2" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">

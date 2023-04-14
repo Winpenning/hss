@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Projeto_Integrador
+namespace Projeto_Integrador.pages
 {
-    public partial class MainPage : ContentPage
+    public partial class servidores : ContentPage
     {
-        public MainPage()
+        public servidores()
         {
             InitializeComponent();
         }
