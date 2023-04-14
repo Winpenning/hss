@@ -47,7 +47,6 @@
                 <Button HeightRequest="150" Text="Servidor SQUID" WidthRequest="70" Margin="50,10" 
                         BackgroundColor="#EBE6F7" CornerRadius="20"/>
             </StackLayout>
-        
         </Grid>
     </ScrollView>
 </ContentPage>
