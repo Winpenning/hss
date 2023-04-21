@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
              x:Class="Projeto_Integrador.MainPage"
              Title="HOME"
              BackgroundColor="Black">
@@ -10,39 +11,27 @@
             <GradientStop Color="HotPink" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
+    <ScrollView Orientation="Vertical">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Text="Bem vindo." FontSize="45" FontAttributes="Bold"
+                       Margin="40,40,0,0"/>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+                <Label Text="Acesse a aba 'SERVIDORES' para instalação e configuração
+                       de serviços e servidores."
+                       FontSize="20"  HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"/>
 
-        <StackLayout Grid.Row="0">
-            <Frame CornerRadius="10" Margin="10,10,10,10" BackgroundColor="#303030" HorizontalOptions="Center">
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="twl" FontAttributes="Bold" FontSize="20" TextColor="#f0f0f0"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Frame>
-        </StackLayout>
-
-        <StackLayout Grid.Row="1">
-            <Frame CornerRadius="30" Margin="0,0,0,0" BackgroundColor="#FFFFFF">
-                <StackLayout HeightRequest="1000">
-                    <Label Text="O twl é um aplicativo mobile para o aprendizado de instalação e configuração de servidores, utilização dos terminais linux, powershell e uma introdução á sistemas operacionais." FontSize="18" FontAttributes="Bold"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-        <StackLayout Grid.Row="2">
-            <Frame CornerRadius="30" Margin="0,0,0,0" BackgroundColor="#FFFFFF">
-                <StackLayout HeightRequest="1000">
-                    <Label Text="Desenvolvido como um projeto da disciplina Projeto Integrador do curso técnico em manutenção e suporte em informática do Instituto Federal de Santa Cataria (IFSC). pelo aluno: Paulo Henrique Ziemer dos Santos (github: Winpenning) sob direção do professor orientador: Diocélio Larsen." FontSize="18" FontAttributes="Bold"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-    </Grid>
+                <Label Text="Acesse a aba 'TERMINAIS' para comandos de terminais linux, 
+                       powershell e conceitos básicos de shell script."
+                       FontSize="20" Margin="20,10"/>
+            </StackLayout>
+            
+        </Grid>
+    </ScrollView>
 </ContentPage>
