@@ -22,16 +22,22 @@
                 <Label Text="Bem vindo." FontSize="45" FontAttributes="Bold"
                        Margin="40,40,0,0"/>
 
+                
+            </StackLayout>
+
+            <StackLayout Grid.Row="1">
                 <Label Text="Acesse a aba 'SERVIDORES' para instalação e configuração
                        de serviços e servidores."
-                       FontSize="20"  HorizontalOptions="FillAndExpand"
-                       VerticalOptions="FillAndExpand"/>
+                       FontSize="20" Margin="40,40,10,10"/>
 
                 <Label Text="Acesse a aba 'TERMINAIS' para comandos de terminais linux, 
-                       powershell e conceitos básicos de shell script."
-                       FontSize="20" Margin="20,10"/>
+                       powershell e conceitos básicos de shell script. "
+                       FontSize="20"  Margin="40,0,10,10"/>
             </StackLayout>
-            
+
+            <StackLayout Grid.Row="2">
+                <Button/>
+            </StackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>
