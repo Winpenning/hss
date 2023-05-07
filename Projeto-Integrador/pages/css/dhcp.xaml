@@ -14,11 +14,14 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="0">
                 <Label Text="DHCP"
-                       FontSize="38" TextColor="#373737" 
+                       FontSize="38" TextColor="#252525" 
                        FontAttributes="Bold" Margin="30,60,10,0"/>
+                <Label Text="O Dynamic Host Configuration Protocol (DHCP) é um protocolo de serviço TCP/IP que oferece configuração dinâmica de terminais, concedendo endereços IP de host, máscara de sub-rede (netmask) e o gateway padrão"
+                       FontSize="20" Margin="30,10" TextColor="#373737"/>
             </StackLayout>
 
             <StackLayout Grid.Row="1" Orientation="Vertical">
@@ -35,6 +38,45 @@
                                 </Label.FormattedText>
                             </Label>
                         </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Arquivo de configuração do DHCP" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/dhcp/dhcpd.conf"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Comandos do DHCP" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text="/etc/init.d/isc-dhcp-server"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            
+                        </Frame>
+                        <Label Text="start" FontSize="16" TextColor="#373737" Margin="20,5"/>
+                        <Label Text="stop" FontSize="16" TextColor="#373737" Margin="20,1"/>
+                        <Label Text="restart" FontSize="16" TextColor="#373737" Margin="20,1"/>
+                        <Label Text="status" FontSize="16" TextColor="#373737" Margin="20,1"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
