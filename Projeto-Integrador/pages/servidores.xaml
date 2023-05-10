@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.servidores"
+             
              Title="Servidores">
     <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
-            <GradientStop Color="#e0d6fa" Offset="0.1"/>
-            <GradientStop Color="HotPink" Offset="1.0"/>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#5170FF" Offset="0.1"/>
+            <GradientStop Color="#FF66C4" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
     <ScrollView Orientation="Vertical">
@@ -20,32 +21,32 @@
         </Grid.RowDefinitions>
 
         <StackLayout Grid.Row="0">
-            <Label Text="Configuração de Serviços e Servidores" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
-        </StackLayout>
+                <Label Text="Configuração de Serviços e Servidores" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+            </StackLayout>
 
         <StackLayout Grid.Row="1">
-            <Button HeightRequest="150" Text="Servidor DHCP" WidthRequest="70" Margin="50,10"
-                            BackgroundColor="#ebe6f7" CornerRadius="20" Clicked="Button_Clicked"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="Button_Clicked"
+                        Text="servidor dhcp" FontSize="20" FontAttributes="Bold" />
         </StackLayout>
 
         <StackLayout Grid.Row="2">
-            <Button HeightRequest="150" Text="Servidor FTP" WidthRequest="70" Margin="50,10"
-                    BackgroundColor="#ebe6f7" CornerRadius="20"/>
-        </StackLayout>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" 
+                        Text="servidor ftp" FontSize="20" FontAttributes="Bold" />
+            </StackLayout>
 
         <StackLayout Grid.Row="3">
-            <Button HeightRequest="150" Text="Apache HTTP" WidthRequest="70" Margin="50,10"
-                    BackgroundColor="#ebe6f7" CornerRadius="20"/>
-        </StackLayout>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" 
+                        Text="apache http" FontSize="20" FontAttributes="Bold" />
+            </StackLayout>
 
         <StackLayout Grid.Row="4">
-            <Button HeightRequest="150" Text="Servidor samba" WidthRequest="70" Margin="50,10"
-                    BackgroundColor="#ebe6f7" CornerRadius="20"/>
-        </StackLayout>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20"
+                        Text="servidor samba" FontSize="20" FontAttributes="Bold" />
+            </StackLayout>
 
             <StackLayout Grid.Row="5">
-                <Button HeightRequest="150" Text="Servidor SQUID" WidthRequest="70" Margin="50,10" 
-                        BackgroundColor="#EBE6F7" CornerRadius="20"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20"
+                        Text="servidor squid" FontSize="20" FontAttributes="Bold" />
             </StackLayout>
         </Grid>
     </ScrollView>
