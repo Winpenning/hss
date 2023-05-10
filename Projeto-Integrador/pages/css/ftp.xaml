@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto_Integrador.pages.css.dhcp">
+             x:Class="Projeto_Integrador.pages.css.ftp">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="#7493FF" Offset="0.1"/>
@@ -15,25 +15,25 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="0">
-                <Label Text="DHCP"
-                       FontSize="38" TextColor="#fffffa" 
+                <Label Text="FTP"
+                       FontSize="38" TextColor="#fffffa"
                        FontAttributes="Bold" Margin="30,60,10,0"/>
-                <Label Text="O Dynamic Host Configuration Protocol (DHCP) é um protocolo de serviço TCP/IP que oferece configuração dinâmica de terminais, concedendo endereços IP de host, máscara de sub-rede (netmask) e o gateway padrão"
+                <Label Text="O File Transfer Protocol é um protocolo padrão de transferência de arquivos."
                        FontSize="20" Margin="30,10" TextColor="#fffffa"/>
             </StackLayout>
-
             <StackLayout Grid.Row="1" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
                     <StackLayout>
-                        <Label Text="Instalando o DHCP" FontSize="26"
+                        <Label Text="Instalando o FTP" FontSize="26"
                                FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text="apt-get install isc-dhcp-server"/>
+                                        <Span TextColor="Wheat" Text="apt-get install proftpd"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
@@ -44,13 +44,13 @@
             <StackLayout Grid.Row="2" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
                     <StackLayout>
-                        <Label Text="Arquivo de configuração do DHCP" FontSize="26"
+                        <Label Text="Arquivo de configuração do FTP" FontSize="26"
                                FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/dhcp/dhcpd.conf"/>
+                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/proftpd/proftpd.conf"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
@@ -67,11 +67,11 @@
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text="/etc/init.d/isc-dhcp-server"/>
+                                        <Span TextColor="Wheat" Text="/etc/init.d/proftpd"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
-                            
+
                         </Frame>
                         <Label Text="start" FontSize="16" TextColor="#373737" Margin="20,5" FontAttributes="Bold"/>
                         <Label Text="stop" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
