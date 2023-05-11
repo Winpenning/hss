@@ -35,7 +35,7 @@
             </StackLayout>
 
         <StackLayout Grid.Row="3">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" 
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="Button_Clicked_2"
                         Text="apache http" FontSize="20" FontAttributes="Bold" />
             </StackLayout>
 

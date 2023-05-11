@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Integrador.pages.css.apachehttp">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#7493FF" Offset="0.1"/>
+            <GradientStop Color="#FF71C8" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Text="APACHE HTTP"
+                       FontSize="38" TextColor="#fffffa"
+                       FontAttributes="Bold" Margin="30,60,10,0"/>
+                <Label Text="O Servidor HTTP Apache , é um servidor web livre.É um servidor do tipo HTTPD, compatível com o protocolo HTTP. Suas funcionalidades são mantidas através de uma estrutura de módulos, permitindo inclusive que o usuário escreva seus próprios módulos utilizando a API do software."
+                       FontSize="20" Margin="30,10" TextColor="#fffffa"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Instalando o Apache HTTP" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text="apt-get install apache2"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Alterando acesso a pasta www" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text=" chmod -R 777 /var/www"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Comandos do Apache HTTP" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text="/etc/init.d/apache2"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </Frame>
+                        <Label Text="start" FontSize="16" TextColor="#373737" Margin="20,5" FontAttributes="Bold"/>
+                        <Label Text="stop" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
+                        <Label Text="restart" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
+                        <Label Text="status" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
