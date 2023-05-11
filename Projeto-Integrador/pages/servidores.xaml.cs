@@ -33,5 +33,11 @@ namespace Projeto_Integrador.pages
             var x = new Projeto_Integrador.pages.css.apachehttp();
             Navigation.PushModalAsync(x);
         }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            var x = new Projeto_Integrador.pages.css.samba();
+            Navigation.PushModalAsync(x);
+        }
     }
 }

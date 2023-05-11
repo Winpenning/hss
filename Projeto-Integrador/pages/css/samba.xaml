@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto_Integrador.pages.css.ftp">
+             x:Class="Projeto_Integrador.pages.css.samba">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="#7493FF" Offset="0.1"/>
@@ -18,22 +18,22 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="0">
-                <Label Text="FTP"
+                <Label Text="SERVIDOR SAMBA"
                        FontSize="38" TextColor="#fffffa"
                        FontAttributes="Bold" Margin="30,60,10,0"/>
-                <Label Text="O File Transfer Protocol é um protocolo padrão de transferência de arquivos."
-                       FontSize="20" Margin="30,10" TextColor="#fffffa"/>
+                <Label Text="O Samba é um “software servidor” para Linux (e outros sistemas baseados em Unix) que permite o gerenciamento e compartilhamento de recursos em redes formadas por computadores com o Windows."       
+                FontSize="20" Margin="30,10" TextColor="#fffffa"/>
             </StackLayout>
             <StackLayout Grid.Row="1" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
                     <StackLayout>
-                        <Label Text="Instalando o FTP" FontSize="26"
+                        <Label Text="Instalando o Servidor SAMBA" FontSize="26"
                                FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text="apt-get install proftpd"/>
+                                        <Span TextColor="Wheat" Text="apt-get install samba"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
@@ -44,13 +44,13 @@
             <StackLayout Grid.Row="2" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
                     <StackLayout>
-                        <Label Text="Arquivo de configuração do FTP" FontSize="26"
+                        <Label Text="Arquivo de configuração do SAMBA" FontSize="26"
                                FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text="nano (ou vim, etc.) /etc/proftpd/proftpd.conf"/>
+                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/samba/smb.conf"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
@@ -61,13 +61,13 @@
             <StackLayout Grid.Row="3" Orientation="Vertical">
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
                     <StackLayout>
-                        <Label Text="Comandos do DHCP" FontSize="26"
+                        <Label Text="Comandos do Servidor SAMBA" FontSize="26"
                                FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text="/etc/init.d/proftpd"/>
+                                        <Span TextColor="Wheat" Text="/etc/init.d/samba"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
