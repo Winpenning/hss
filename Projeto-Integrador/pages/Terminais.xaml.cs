@@ -34,5 +34,11 @@ namespace Projeto_Integrador.pages
             var shellscript = new Projeto_Integrador.pages.shellscript();
             Navigation.PushModalAsync(shellscript);
         }
+
+        private void botao_rede(object sender, EventArgs e)
+        {
+            var rede = new Projeto_Integrador.pages.linux.rede();
+            Navigation.PushModalAsync(rede);
+        }
     }
 }

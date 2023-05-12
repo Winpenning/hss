@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Integrador.pages.linux.rede">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#7493FF" Offset="0.1"/>
+            <GradientStop Color="#FF71C8" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Text="Configuração de Serviços e Servidores" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Características da placa" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text="ip a"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                        <Label Text="Retorna endereço ip, endereço mac, nome da placa de rede, etc." FontSize="16" TextColor="#373737" Margin="20,5" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Configurações de placa de rede" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/init.d/network/interfaces"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Comandos da placa de rede" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span TextColor="Wheat" Text="/etc/init.d/networking"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </Frame>
+                        <Label Text="start" FontSize="16" TextColor="#373737" Margin="20,5" FontAttributes="Bold"/>
+                        <Label Text="stop" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
+                        <Label Text="restart" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
+                        <Label Text="status" FontSize="16" TextColor="#373737" Margin="20,1" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="ping 'ip ou domínio'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Dispara pacotes contra o destinatário" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Exemplo de arquivo de configuração de rede via dhcp" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="auto  enp0s25" TextColor="Wheat"/>
+                        </Frame>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="iface enp0s25 inet dhcp" TextColor="Wheat"/>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="5" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Exemplo de arquivo de configuração de rede estática" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="iface enp0s25 inet static" TextColor="Wheat"/>
+                        </Frame>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="addreess 10.74.18.1" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Aqui coloca-se o ip" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="network 10.74.18.0" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Aqui coloca-se os três primeiros octetos do ip e após, o 0" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="netmask 255.255.255.0" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Aqui coloca-se a máscara de sub-rede." FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="broadcast 10.74.18.255" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Aqui coloca-se os três primeiros octetos do ip e após, o 255" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

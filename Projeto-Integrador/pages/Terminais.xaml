@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.pages.Css"
-             Title="Terminais">
+             Title="Linux">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#e0d6fa" Offset="0.1"/>
-            <GradientStop Color="HotPink" Offset="1.0"/>
+            <GradientStop Color="#FF66C4" Offset="0.1"/>
+            <GradientStop Color="#5170FF" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
     <Grid>
@@ -14,29 +14,32 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-            <StackLayout Grid.Row="0">
-                <Label Text="COMANDOS" 
-                   TextColor="White" FontAttributes="Bold" FontSize="38"
-                   Margin="20,80,0,0"/>
-            </StackLayout>
-            <StackLayout>
-            <Frame CornerRadius="30" Margin="0,160,0,0" BackgroundColor="#FFFFFF">
-                <StackLayout Grid.Row="2" HeightRequest="1000">
-                    <ImageButton Source="terminal.png" Clicked="botao_terminal"
-                        HeightRequest="150" WidthRequest="70" Margin="50,10" 
-                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
-            
-                    <ImageButton Source="Windows.png" Clicked="botao_power"
-                        HeightRequest="150" WidthRequest="70" Margin="50,10"
-                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
-            
-                    <ImageButton Source="ShellScript.png" Clicked="botao_shellscript"
-                        HeightRequest="150" WidthRequest="70" Margin="50,10"
-                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
-                </StackLayout>
-            </Frame>
+        <StackLayout Grid.Row="0" HeightRequest="159">
+            <Label Text="Linux" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
         </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_rede"
+                        Text="REDE" FontSize="20" FontAttributes="Bold" />
+        </StackLayout>
+        <StackLayout Grid.Row="2">
+            <ImageButton Source="terminal.png" Clicked="botao_terminal" 
+                HeightRequest="150" WidthRequest="70" Margin="50,10" 
+                BackgroundColor="#ebe6f7" CornerRadius="20"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3">
+            <ImageButton Source="Windows.png" Clicked="botao_power"
+                        HeightRequest="150" WidthRequest="70" Margin="50,10"
+                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
+        </StackLayout>
+        <StackLayout Grid.Row="4">
+        <ImageButton Source="ShellScript.png" Clicked="botao_shellscript"
+                        HeightRequest="150" WidthRequest="70" Margin="50,10"
+                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
+        </StackLayout>                
+
     </Grid>
 </ContentPage>
