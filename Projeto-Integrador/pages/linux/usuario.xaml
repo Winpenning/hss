@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Integrador.pages.linux.usuario">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#7493FF" Offset="0.1"/>
+            <GradientStop Color="#FF71C8" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Text="USUÁRIOS E GRUPOS\" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Criando e excluindo um usuário" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="adduser 'nome_do_usuario'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Cria um usuário" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="userdel 'nome_do_usuario'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Apaga a conta de um usuário" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Administrando grupos de usuários" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="addgroup 'nome_do_grupo'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Cria um grupo" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="cat /etc/group" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Lista os grupos de usuários" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="addgroup -a 'nome_do_usuario' 'nome_do_grupo'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Adiciona um usuário a um grupo" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -11,10 +11,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="pages\linux\NovaPasta\**" />
+    <EmbeddedResource Remove="pages\linux\NovaPasta\**" />
+    <None Remove="pages\linux\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="pages\linux\usuari.xaml.cs" />
     <Compile Remove="pages\P1.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="pages\linux\usuari.xaml" />
     <EmbeddedResource Remove="pages\P1.xaml" />
   </ItemGroup>
 
@@ -46,6 +54,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\linux\rede.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="pages\linux\usuario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\servidores.xaml">
