@@ -40,5 +40,11 @@ namespace Projeto_Integrador.pages
             var rede = new Projeto_Integrador.pages.linux.rede();
             Navigation.PushModalAsync(rede);
         }
+
+        private void botao_usuario(object sender, EventArgs e)
+        {
+            var usuario = new Projeto_Integrador.pages.linux.usuario();
+            Navigation.PushModalAsync(usuario);
+        }
     }
 }
