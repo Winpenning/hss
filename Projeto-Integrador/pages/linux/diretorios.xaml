@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Integrador.pages.linux.diretorios">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#7493FF" Offset="0.1"/>
+            <GradientStop Color="#FF71C8" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Text="DIRETÓRIOS" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Criação e locomoção entre diretórios" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="mkdir 'diretório'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Cria um diretório no caminho ou em um caminho específicado" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="cd 'diretório'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Entra no diretório" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="cd .." TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Sai do diretório" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Vertical">
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Permissões de arquivos e diretórios" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="chmod 'sequência de premissões' 'tipo de permissão' 'caminho do arquivo/diretório'" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Dá permissões a um diretório ou arquivo" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Label Text="R - permissão de leitura" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Label Text="W - permissão de gravação" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Label Text="X - permissão de execução" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Exemplo de alterações de permissões em um diretório" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
+                            <Label Text="chmod 777 -R /home/visitante/visitante1" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Dá permissão total de todos os usuários ao diretório /home/visitante/visitante1" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

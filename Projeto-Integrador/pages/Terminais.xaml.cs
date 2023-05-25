@@ -46,5 +46,11 @@ namespace Projeto_Integrador.pages
             var usuario = new Projeto_Integrador.pages.linux.usuario();
             Navigation.PushModalAsync(usuario);
         }
+
+        private void botao_diretorios(object sender, EventArgs e)
+        {
+            var diretorios = new Projeto_Integrador.pages.linux.diretorios();
+            Navigation.PushModalAsync(diretorios);
+        }
     }
 }
