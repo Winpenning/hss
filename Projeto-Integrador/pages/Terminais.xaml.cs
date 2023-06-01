@@ -52,5 +52,10 @@ namespace Projeto_Integrador.pages
             var diretorios = new Projeto_Integrador.pages.linux.diretorios();
             Navigation.PushModalAsync(diretorios);
         }
+        private void botao_terminaleSistema(object sender, EventArgs e)
+        {
+            var terminaleSistema = new Projeto_Integrador.pages.linux.terminaleSistema();
+            Navigation.PushModalAsync(terminaleSistema);
+        }
     }
 }

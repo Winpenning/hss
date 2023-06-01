@@ -9,47 +9,54 @@
             <GradientStop Color="#5170FF" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
-    <Grid>
+    <ScrollView Orientation="Vertical">
+        <Grid>
             <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <StackLayout Grid.Row="0" HeightRequest="200">
-            <Label Text="Linux" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
-        </StackLayout>
-        <StackLayout Grid.Row="1">
-            <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_rede"
+            <StackLayout Grid.Row="0" HeightRequest="200">
+                <Label Text="Linux" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_rede"
                         Text="REDE" FontSize="20" FontAttributes="Bold" />
-        </StackLayout>
-        <StackLayout Grid.Row="2">
-            <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_usuario"
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_usuario"
                         Text="USUÁRIOS E GRUPOS" FontSize="20" FontAttributes="Bold" />
-        </StackLayout>
-        <StackLayout Grid.Row="3">
-            <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_diretorios"
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_diretorios"
                         Text="DIRETÓRIOS" FontSize="20" FontAttributes="Bold" />
-        </StackLayout>
-        <StackLayout Grid.Row="4">
-            <ImageButton Source="terminal.png" Clicked="botao_terminal" 
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_terminaleSistema"
+                        Text="TERMINAL E SISTEMA" FontSize="20" FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Grid.Row="5">
+                <ImageButton Source="terminal.png" Clicked="botao_terminal" 
                 HeightRequest="150" WidthRequest="70" Margin="50,10" 
                 BackgroundColor="#ebe6f7" CornerRadius="20"/>
-        </StackLayout>
-        <StackLayout Grid.Row="5">
-            <ImageButton Source="Windows.png" Clicked="botao_power"
+            </StackLayout>
+            <StackLayout Grid.Row="6">
+                <ImageButton Source="Windows.png" Clicked="botao_power"
                         HeightRequest="150" WidthRequest="70" Margin="50,10"
                         BackgroundColor="#ebe6f7" CornerRadius="20"/>
-        </StackLayout>
-        <StackLayout Grid.Row="6">
-        <ImageButton Source="ShellScript.png" Clicked="botao_shellscript"
+            </StackLayout>
+            <StackLayout Grid.Row="7">
+                <ImageButton Source="ShellScript.png" Clicked="botao_shellscript"
                         HeightRequest="150" WidthRequest="70" Margin="50,10"
                         BackgroundColor="#ebe6f7" CornerRadius="20"/>
-        </StackLayout>                
+            </StackLayout>
 
-    </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>
