@@ -65,10 +65,10 @@
     <EmbeddedResource Update="pages\Sistema.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="pages\powershell.xaml">
+    <EmbeddedResource Update="pages\outros\powershell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="pages\shellscript.xaml">
+    <EmbeddedResource Update="pages\outros\shellscript.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\shell\comandosbasicos.xaml">
@@ -77,7 +77,7 @@
     <EmbeddedResource Update="pages\shell\operadores.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="pages\terminal.xaml">
+    <EmbeddedResource Update="pages\outros\terminal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
