@@ -32,12 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="pages\Terminais.xaml.cs">
-      <DependentUpon>Terminais.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="pages\css\apachehttp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -68,7 +62,7 @@
     <EmbeddedResource Update="pages\servidores.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="pages\Terminais.xaml">
+    <EmbeddedResource Update="pages\Sistema.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\powershell.xaml">

@@ -19,8 +19,12 @@ public partial class terminal : ContentPage
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            
             var controlAcess = new Projeto_Integrador.pages.acesso();
-            Navigation.PushModalAsync(controlAcess);
+            //if(controlAcess == null)
+            //{
+                Navigation.PushModalAsync(controlAcess);
+           // }
         }
 
         private void Button_Clicked2(object sender, EventArgs e)

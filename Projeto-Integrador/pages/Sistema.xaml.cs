@@ -9,14 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Projeto_Integrador.pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Css : ContentPage
-    {
-        public Css()
-        {
-            InitializeComponent();
-        }
-
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Sistema : ContentPage
+	{
+		public Sistema ()
+		{
+			InitializeComponent();
+		}
         private void botao_terminal(object sender, EventArgs e)
         {
             var terminalLin = new Projeto_Integrador.pages.terminal();

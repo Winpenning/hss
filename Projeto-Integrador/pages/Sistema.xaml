@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto_Integrador.pages.Css"
-             Title="Linux">
+             x:Class="Projeto_Integrador.pages.Sistema"
+             Title="SISTEMA">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="#FF66C4" Offset="0.1"/>
@@ -22,7 +22,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <StackLayout Grid.Row="0" HeightRequest="200">
+            <StackLayout Grid.Row="0">
                 <Label Text="Linux" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
             </StackLayout>
             <StackLayout Grid.Row="1">
@@ -42,7 +42,7 @@
                         Text="TERMINAL E SISTEMA" FontSize="20" FontAttributes="Bold" />
             </StackLayout>
             <StackLayout Grid.Row="5">
-                <ImageButton Source="terminal.png" Clicked="botao_terminal" 
+                <ImageButton Source="terminal.png" Clicked="botao_terminal"
                 HeightRequest="150" WidthRequest="70" Margin="50,10" 
                 BackgroundColor="#ebe6f7" CornerRadius="20"/>
             </StackLayout>
