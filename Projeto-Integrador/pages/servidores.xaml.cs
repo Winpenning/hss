@@ -18,8 +18,17 @@ namespace Projeto_Integrador.pages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var x = new Projeto_Integrador.pages.css.dhcp();
-            Navigation.PushModalAsync(x);
+            
+            ContentPage x = null;
+           // if (x == null)
+           // {
+                x = new Projeto_Integrador.pages.css.dhcp();
+                Navigation.PushModalAsync(x);
+           // }
+            //else
+            //{
+                Navigation.PushModalAsync(x);
+            //}
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
@@ -44,6 +53,18 @@ namespace Projeto_Integrador.pages
         {
             var x = new Projeto_Integrador.pages.css.squid();
             Navigation.PushModalAsync(x);
+        }
+
+        private void switchIsEnabled(bool value)
+        {
+            if (value == true)
+            {
+                value = false;
+            }
+            else
+            {
+                value = true;
+            }
         }
     }
 }
