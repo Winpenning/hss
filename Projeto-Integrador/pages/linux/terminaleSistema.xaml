@@ -8,4 +8,166 @@
             <GradientStop Color="#FF71C8" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
+
+    <ScrollView Orientation="Vertical">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <Label Text="TERMINAL E SISTEMA" 
+                       TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Frame CornerRadius="30" BackgroundColor="#f2f2f2" Margin="10">
+                    <StackLayout>
+                        <Label Text="Comandos para o terminal" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="clear" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Limpa a tela do terminal." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="history" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="mostra o histórico de comandos." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <Frame CornerRadius="30" BackgroundColor="#f2f2f2" Margin="10">
+                    <StackLayout>
+                        <Label Text="Sistema" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="sudo su" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Comando para virar root no sistema." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Label Text="su root - alternativa." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="apt-get" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="É um gerenciador de pacotes para as distros debian (Debian, Ubuntu, Kali e Mint), ele pode atualizar todo o sistema via protocolos ftp e http." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <Frame CornerRadius="30" BackgroundColor="#f2f2f2" Margin="10">
+                    <StackLayout>
+                        <Label Text="Exemplos do apt-get" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="apt-get install 'pacote'" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Instala um pacote." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="apt-get remove 'pacote'" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Remove um pacote." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="apt-get update" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Atualiza a lista de pacotes disponíveis e suas versões, mas não instala nem atualiza nenhum pacote." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="apt-get upgrade" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Instala as versões mais recentes dos pacotes que você possui." 
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Frame CornerRadius="30" BackgroundColor="#f2f2f2" Margin="10">
+                    <StackLayout>
+                        <Label Text="Energia" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="shutdown" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Desliga o computador."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Label Text="-H, -halt - para parar a máquina."
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Label Text="-P, -poweroff - desligamento padrão."
+                               TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="reboot" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="reinicia o computador."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="5">
+                <Frame CornerRadius="30" BackgroundColor="#f2f2f2" Margin="10">
+                    <StackLayout>
+                        <Label Text="Processos e versões" FontSize="26"
+                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="top" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Exibe a lista de processos sendo executados no sistema."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="cat /proc/cpuinfo" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Exibe informações sobre o processador."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="uname -r" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Mostra a versão do kernel."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="'nome do programa' version" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Mostra a versão do programa."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="cat /etc/issue" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Exibe informações sobre a distro que está rodando."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                        <Frame CornerRadius="30" BackgroundColor="#252525" Margin="10">
+                            <Label Text="dmesg" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="mostra mensagens de inicialização do kernel."
+                                TextColor="#353535" FontSize="16" FontAttributes="Bold" Margin="20,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
 </ContentPage>

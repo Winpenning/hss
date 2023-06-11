@@ -27,7 +27,6 @@ namespace Projeto_Integrador.pages
            // }
             //else
             //{
-                Navigation.PushModalAsync(x);
             //}
         }
 
