@@ -31,11 +31,13 @@
                         </Frame>
                         <Label Text="Cria um diretório no caminho ou em um caminho específicado" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
-                            <Label Text="cd 'diretório'" TextColor="Wheat"/>
+                            <Label Text="cd 'diretório'" 
+                                   TextColor="Wheat" FontSize="16"/>
                         </Frame>
                         <Label Text="Entra no diretório" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
-                            <Label Text="cd .." TextColor="Wheat"/>
+                            <Label Text="cd .." 
+                                   TextColor="Wheat" FontSize="16"/>
                         </Frame>
                         <Label Text="Sai do diretório" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
                     </StackLayout>
@@ -47,7 +49,8 @@
                         <Label Text="Permissões de arquivos e diretórios" FontSize="26"
                                FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
-                            <Label Text="chmod 'sequência de premissões' 'tipo de permissão' 'caminho do arquivo/diretório'" TextColor="Wheat"/>
+                            <Label Text="chmod 'sequência de premissões' 'tipo de permissão' 'caminho do arquivo/diretório'" 
+                                   TextColor="Wheat" FontSize="16"/>
                         </Frame>
                         <Label Text="Dá permissões a um diretório ou arquivo" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
                         <Label Text="R - permissão de leitura" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
@@ -57,13 +60,66 @@
                 </Frame>
                 <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#F2F2F2">
                     <StackLayout>
-                        <Label Text="Exemplo de alterações de permissões em um diretório" FontSize="26"
-                               FontAttributes="Bold" TextColor="#252525"/>
+                        <Label Text="Exemplo de alterações de permissões em um diretório" 
+                               FontSize="26" FontAttributes="Bold" TextColor="#252525"/>
                         <Frame CornerRadius="30" Margin="10,10,10,10" BackgroundColor="#353535">
-                            <Label Text="chmod 777 -R /home/visitante/visitante1" TextColor="Wheat"/>
+                            <Label Text="chmod 777 -R /home/visitante/visitante1" TextColor="Wheat" FontSize="16"/>
                         </Frame>
-                        <Label Text="Dá permissão total de todos os usuários ao diretório /home/visitante/visitante1" FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Label Text="Dá permissão total de todos os usuários ao diretório /home/visitante/visitante1" 
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
                     </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <Frame CornerRadius="30" Margin="10" BackgroundColor="#F2F2F2">
+                    <StackLayout>
+                        <Label Text="Listagem" 
+                               FontSize="26" FontAttributes="Bold" TextColor="#252525"/>
+                        <Frame CornerRadius="30" Margin="10" BackgroundColor="#252525">
+                            <Label Text="pwd" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Mostra o diretório em que você está"
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+
+                        <Frame CornerRadius="30" Margin="10" BackgroundColor="#252525">
+                            <Label Text="ls" 
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Lista os arquivos e diretórios da pasta atual"
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Frame CornerRadius="30" Margin="10" BackgroundColor="#f2f2f2">
+                    <StackLayout>
+                        <Label Text=" Exclusão de arquivos e diretórios"
+                               FontSize="26" FontAttributes="Bold" TextColor="#252525"/>
+                        <!-- <Button Text="rm" HorizontalOptions="Start" Clicked="Button_Clicked" 
+                                Margin="20,0" BackgroundColor="#252525" CornerRadius="30"
+                                FontSize="16" TextColor="Wheat" WidthRequest="300"></Button> -->
+                        <Frame CornerRadius="30" Margin="10" BackgroundColor="#252525">
+                            <Label Text="rm"
+                               FontSize="16" TextColor="Wheat"/>
+                        </Frame>
+                        <Label Text="Exclui arquivos ou diretórios."
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Label Text="rm -rf 'diretório' - exluir um diretório."
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <Label Text="rm 'arquivo' excluir um arquivo."
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                        <!--  <Button Text="exiba" Clicked="Button_Clicked" Margin="20,0"
+                                    BackgroundColor="#252525" CornerRadius="30" FontSize="16"
+                                    TextColor="Wheat"/> -->
+                        <Frame CornerRadius="30" Margin="10" BackgroundColor="#252525">
+                            <Label Text="rmdir 'diretório'"
+                                   TextColor="Wheat" FontSize="16"/>
+                        </Frame>
+                        <Label Text="Exclui o diretório especificado desde que vazio."
+                               FontSize="16" TextColor="#373737" Margin="20,0" FontAttributes="Bold"/>
+                    </StackLayout>
+
                 </Frame>
             </StackLayout>
         </Grid>
