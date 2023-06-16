@@ -41,22 +41,6 @@
                 <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_terminaleSistema"
                         Text="TERMINAL E SISTEMA" FontSize="20" FontAttributes="Bold" />
             </StackLayout>
-            <StackLayout Grid.Row="5">
-                <ImageButton Source="terminal.png" Clicked="botao_terminal"
-                HeightRequest="150" WidthRequest="70" Margin="50,10" 
-                BackgroundColor="#ebe6f7" CornerRadius="20"/>
-            </StackLayout>
-            <StackLayout Grid.Row="6">
-                <ImageButton Source="Windows.png" Clicked="botao_power"
-                        HeightRequest="150" WidthRequest="70" Margin="50,10"
-                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
-            </StackLayout>
-            <StackLayout Grid.Row="7">
-                <ImageButton Source="ShellScript.png" Clicked="botao_shellscript"
-                        HeightRequest="150" WidthRequest="70" Margin="50,10"
-                        BackgroundColor="#ebe6f7" CornerRadius="20"/>
-            </StackLayout>
-
         </Grid>
     </ScrollView>
 </ContentPage>
