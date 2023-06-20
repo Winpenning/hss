@@ -2,34 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Integrador.MainPage"
-             Title="HOME"
-             BackgroundColor="#DFDFDF">
+             Title="HOME">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="1,1" EndPoint="1,0">
+            <GradientStop Color="#FF66C4" Offset="0.1"/>
+            <GradientStop Color="#5170FF" Offset="0.6"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ScrollView Orientation="Vertical">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0">
-                <Label Text="Bem vindo." FontSize="45" FontAttributes="Bold"
-                       Margin="40,40,0,0" TextColor="#252525"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Label Text="hss" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="25,10,10,10"/>
             </StackLayout>
-            
+            <StackLayout Grid.Row="1">
+                <Label Text="Acesse a aba servidores para acessar a instalação e configuração de serviços e servidores." TextTransform="Uppercase" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="25,10,10,10"/>
+            </StackLayout>
             <StackLayout Grid.Row="2">
-                <Label Text="Acesse a aba 'SERVIDORES' para instalação e configuração
-                           de serviços e servidores."
-                           FontSize="20" Margin="40,40,10,10" TextColor="#252525"/>
-
-                <Label Text="Acesse a aba 'TERMINAIS' para comandos de terminais linux, 
-                        powershell e conceitos básicos de shell script. "
-                        FontSize="20"  Margin="40,0,10,10" TextColor="#252525"/>
+                <Label Text="Acesse a aba sistema para acessar comandos de sistema, rede, usuários e grupos, diretóros e terminal." TextTransform="Uppercase" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="25,10,10,10"/>
             </StackLayout>
-            <StackLayout Grid.Row="3">
-                        <Button HeightRequest="150" Margin="40" CornerRadius="20" BackgroundColor="#f1f1f9"
-                        Text="Sobre o twl" TextColor="#252525" TextTransform="Uppercase" FontSize="30" FontAttributes="Bold"/>
-                    </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="End">
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="Button_Clicked"
+                        Text="SOBRE O HSS" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
+                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
+            </StackLayout>
         </Grid>
     </ScrollView>
+
 </ContentPage>

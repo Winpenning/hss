@@ -15,11 +15,10 @@ namespace Projeto_Integrador
         {
             InitializeComponent();
         }
-
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var x = new Projeto_Integrador.pages.css.dhcp();
-            Navigation.PushModalAsync(x);
+            var page = new Projeto_Integrador.pages.sobre();
+            Navigation.PushModalAsync(page);
         }
     }
 }
