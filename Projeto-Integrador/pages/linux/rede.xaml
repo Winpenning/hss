@@ -48,7 +48,7 @@
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/init.d/network/interfaces"/>
+                                        <Span TextColor="Wheat" Text=" nano (ou vim, etc.) /etc/network/interfaces"/>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
