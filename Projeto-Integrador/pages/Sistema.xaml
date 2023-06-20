@@ -4,9 +4,9 @@
              x:Class="Projeto_Integrador.pages.Sistema"
              Title="SISTEMA">
     <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+        <LinearGradientBrush StartPoint="1,1" EndPoint="1,0">
             <GradientStop Color="#FF66C4" Offset="0.1"/>
-            <GradientStop Color="#5170FF" Offset="1.0"/>
+            <GradientStop Color="#5170FF" Offset="0.6"/>
         </LinearGradientBrush>
     </ContentPage.Background>
     <ScrollView Orientation="Vertical">
@@ -26,20 +26,24 @@
                 <Label Text="Linux" TextTransform="Uppercase" TextColor="White" FontSize="38" FontAttributes="Bold" Margin="10,10,10,10"/>
             </StackLayout>
             <StackLayout Grid.Row="1">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_rede"
-                        Text="REDE" FontSize="20" FontAttributes="Bold" />
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="botao_rede"
+                        Text="REDE" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
+                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
             </StackLayout>
             <StackLayout Grid.Row="2">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_usuario"
-                        Text="USUÁRIOS E GRUPOS" FontSize="20" FontAttributes="Bold" />
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="botao_usuario"
+                        Text="USUÁRIOS E GRUPOS" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
+                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
             </StackLayout>
             <StackLayout Grid.Row="3">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_diretorios"
-                        Text="DIRETÓRIOS" FontSize="20" FontAttributes="Bold" />
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="botao_diretorios"
+                        Text="DIRETÓRIOS" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
+                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
             </StackLayout>
             <StackLayout Grid.Row="4">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="#F0F0F0" CornerRadius="20" Clicked="botao_terminaleSistema"
-                        Text="TERMINAL E SISTEMA" FontSize="20" FontAttributes="Bold" />
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="botao_terminaleSistema"
+                        Text="TERMINAL E SISTEMA" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
+                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
             </StackLayout>
         </Grid>
     </ScrollView>
