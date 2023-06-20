@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Integrador.pages.sobre">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="1,1" EndPoint="1,0">
+            <GradientStop Color="#FF66C4" Offset="0.1"/>
+            <GradientStop Color="#5170FF" Offset="0.6"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Label Text="Este aplicativo foi desenvolvido para a matéria de Projeto Integrador do curso técnico concomitante em Manutenção e Suporte em Informática do Instituto Federal de Santa Catarina campus Canoinhas." TextTransform="Uppercase" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="25,25,10,10"/>
+                <Label Text="Ele foi desenvolvido pelo discente Paulo Henrique Ziemer dos Santos sob orientação do professor Diocelio Larsen." TextTransform="Uppercase" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="25,25,10,10"/>
+                <Image Source="img.jpg" Margin="25" Aspect="AspectFill" />
+                <Label HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,10,10">
+                    <Label.FormattedText> 
+                        <FormattedString >
+                            <Span Text="Clique aqui " TextColor="White" TextDecorations="Underline" FontSize="18">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"  
+                                  CommandParameter="http://github.com/Winpenning/hss" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text=" Para acessar o repositório no GitHub." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,10,10">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Clique aqui " TextColor="White" TextDecorations="Underline" FontSize="18">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"  
+                                  CommandParameter="https://www.linkedin.com/in/winpenning/" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text=" Para acessar o LinkedIn." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
