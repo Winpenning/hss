@@ -25,33 +25,33 @@
             </StackLayout>
 
             <StackLayout Grid.Row="1">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="Button_Clicked"
-                        Text="SERVIDOR DHCP" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
-                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=#f0f0f0, Dark=#252525,Default=#f0f0f0}" CornerRadius="20" Clicked="Button_Clicked"
+                        Text="SERVIDOR DHCP" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=#252525, Dark=#f5ded3,Default=#252525}" 
+                        TextColor="{AppThemeBinding Light=#252525, Dark=#f0f0f0,Default=#252525}"/>
             </StackLayout>
 
             <StackLayout Grid.Row="2">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="Button_Clicked_1"
-                        Text="SERVIDOR FTP" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
-                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=#f0f0f0, Dark=#252525,Default=#f0f0f0}" CornerRadius="20" Clicked="Button_Clicked_1"
+                        Text="SERVIDOR FTP" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=#252525, Dark=#f5ded3,Default=#252525}" 
+                        TextColor="{AppThemeBinding Light=#252525, Dark=#f0f0f0,Default=#252525}"/>
             </StackLayout>
 
             <StackLayout Grid.Row="3">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="Button_Clicked_2"
-                        Text="APACHE HTTP" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
-                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=#f0f0f0, Dark=#252525,Default=#f0f0f0}" CornerRadius="20" Clicked="Button_Clicked_2"
+                        Text="APACHE HTTP" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=#252525, Dark=#f5ded3,Default=#252525}" 
+                        TextColor="{AppThemeBinding Light=#252525, Dark=#f0f0f0,Default=#252525}"/>
             </StackLayout>
 
             <StackLayout Grid.Row="4">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="Button_Clicked_3"
-                        Text="SERVIDOR SAMBA" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
-                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=#f0f0f0, Dark=#252525,Default=#f0f0f0}" CornerRadius="20" Clicked="Button_Clicked_3"
+                        Text="SERVIDOR SAMBA" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=#252525, Dark=#f5ded3,Default=#252525}" 
+                        TextColor="{AppThemeBinding Light=#252525, Dark=#f0f0f0,Default=#252525}"/>
             </StackLayout>
 
             <StackLayout Grid.Row="5">
-                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=White, Dark=Black,Default=White}" CornerRadius="20" Clicked="Button_Clicked_4"
-                        Text="SERVIDOR SQUID" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}" 
-                        TextColor="{AppThemeBinding Light=Black, Dark=White,Default=Black}"/>
+                <Button HeightRequest="150" WidthRequest="70" Margin="50,10" BackgroundColor="{AppThemeBinding Light=#f0f0f0, Dark=#252525,Default=#f0f0f0}" CornerRadius="20" Clicked="Button_Clicked_4"
+                        Text="SERVIDOR SQUID" FontSize="20" FontAttributes="Bold" BorderWidth="1" BorderColor="{AppThemeBinding Light=#252525, Dark=#f5ded3,Default=#252525}" 
+                        TextColor="{AppThemeBinding Light=#252525, Dark=#f0f0f0,Default=#252525}"/>
             </StackLayout>
         </Grid>
     </ScrollView>

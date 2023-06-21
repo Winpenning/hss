@@ -13,33 +13,18 @@
             <StackLayout>
                 <Label Text="Este aplicativo foi desenvolvido para a matéria de Projeto Integrador do curso técnico concomitante em Manutenção e Suporte em Informática do Instituto Federal de Santa Catarina campus Canoinhas." TextTransform="Uppercase" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="25,25,10,10"/>
                 <Label Text="Ele foi desenvolvido pelo discente Paulo Henrique Ziemer dos Santos sob orientação do professor Diocelio Larsen." TextTransform="Uppercase" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="25,25,10,10"/>
-                <Image Source="img.jpg" Margin="25" Aspect="AspectFill" />
-                <Label HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,10,10">
-                    <Label.FormattedText> 
-                        <FormattedString >
-                            <Span Text="Clique aqui " TextColor="White" TextDecorations="Underline" FontSize="18">
-                                <Span.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding ClickCommand}"  
-                                  CommandParameter="http://github.com/Winpenning/hss" />
-                                </Span.GestureRecognizers>
-                            </Span>
-                            <Span Text=" Para acessar o repositório no GitHub." />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,10,10">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Clique aqui " TextColor="White" TextDecorations="Underline" FontSize="18">
-                                <Span.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding ClickCommand}"  
-                                  CommandParameter="https://www.linkedin.com/in/winpenning/" />
-                                </Span.GestureRecognizers>
-                            </Span>
-                            <Span Text=" Para acessar o LinkedIn." />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+                <Image Source="github.png"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                <ImageButton Grid.Column="0" CornerRadius="30" HorizontalOptions="Center" WidthRequest="400"  HeightRequest="100" BackgroundColor="{AppThemeBinding Dark=#f0f0f0, Light=#f0f0f0,Default=#f0f0f0}" Source="github.png" Command="{Binding ClickCommand}" CommandParameter="http://github.com/Winpenning/" Scale="0.5"/>
+                <ImageButton Grid.Column="1" CornerRadius="30" HorizontalOptions="Center" WidthRequest="400" HeightRequest="100" BackgroundColor="{AppThemeBinding Dark=#f0f0f0, Light=#f0f0f0,Default=#f0f0f0}" Source="linkedin.png" Command="{Binding ClickCommand}" CommandParameter="https://www.linkedin.com/in/winpenning/" Scale="0.5"/>
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
